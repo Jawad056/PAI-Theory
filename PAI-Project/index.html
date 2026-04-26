@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔥 AI Sentiment Analyzer</h1>
+    <p>Enter your text and see AI magic!</p>
+
+    <textarea id="text" placeholder="Type your sentence..."></textarea>
+
+    <button onclick="predictSentiment()">Analyze</button>
+
+    <h2 id="result"></h2>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
